@@ -4,3 +4,9 @@ const API_ROOT =
 export const API_URLS = {
   getQuestion: (questionId) => `${API_ROOT}${questionId}`,
 };
+
+export const questionsIds = [
+  'AreaUnderTheCurve_901',
+  'BinomialTheorem_901',
+  'DifferentialCalculus2_901',
+];
