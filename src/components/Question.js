@@ -3,6 +3,7 @@ import { getQuestion } from '../api';
 import { questionsIds } from '../utils/constants';
 import Loader from './Loader';
 import styles from '../styles/question.module.css';
+import { MathJax } from 'better-react-mathjax';
 
 const Question = () => {
   const [question, setQuestion] = useState('');
@@ -44,7 +45,9 @@ const Question = () => {
   }
   return (
     <div className={styles.questionContainer}>
-      <h3 className={styles.question}>{question}</h3>
+      <MathJax>
+        <h3 className={styles.question}>{question}</h3>
+      </MathJax>
       <div className={styles.navigationBtnContainer}>
         <button onClick={handlePrevClick}>prev</button>
         <button onClick={handleNextClick}>next</button>

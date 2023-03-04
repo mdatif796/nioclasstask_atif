@@ -10,9 +10,26 @@
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 10px;
+  padding: 5px 5px;
+  background-color: #ecf1f4;
+  border-radius: 5px;
 }
 
 .navigationBtnContainer {
-  width: 10%;
+  width: 30%;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigationBtnContainer button {
+  border: none;
+  outline: none;
+  padding: 2px 3px;
+  margin-right: 3px;
+  border-radius: 3px;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
 }
